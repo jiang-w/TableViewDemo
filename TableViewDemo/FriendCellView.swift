@@ -32,7 +32,7 @@ class FriendCellView: UITableViewCell {
         if Image != nil {
             ImgAvatars.image = Image!
         }else{
-            ImgAvatars.image = UIImage(named: "user_default")
+            ImgAvatars.image = UIImage(named: "default_avatars")
         }
         LblName.text = newFriend.Name
         LblIntro.text = newFriend.Intro

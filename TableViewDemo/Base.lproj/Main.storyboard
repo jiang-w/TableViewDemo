@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--联系人-->
         <scene sceneID="Dym-Vm-sI0">
             <objects>
                 <tableViewController id="Xsa-6f-efy" customClass="FriendListView" customModule="TableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lIW-GI-Ezo" id="eCd-fC-Ccv">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-HW-8Ls" userLabel="Avatars">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_avatars" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-HW-8Ls" userLabel="Avatars">
                                             <rect key="frame" x="14" y="9" width="60" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="k4r-UU-A9P"/>
@@ -66,7 +66,7 @@
                             <outlet property="delegate" destination="Xsa-6f-efy" id="5mm-3g-M2w"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="6Dw-AT-nAk"/>
+                    <navigationItem key="navigationItem" title="联系人" id="6Dw-AT-nAk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pY6-HM-zO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +89,9 @@
             <point key="canvasLocation" x="-0.53333333333333333" y="339.85333333333335"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_avatars" width="125" height="125"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

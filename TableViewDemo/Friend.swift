@@ -9,7 +9,7 @@
 import UIKit
 
 class Friend: NSObject {
-    var Avatars: String =  "user_default"
+    var Avatars: String =  "default_avatars"
     var Name: String = ""
     var Intro: String = ""
     var VIP: Bool = false
