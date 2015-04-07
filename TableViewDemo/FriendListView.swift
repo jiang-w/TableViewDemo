@@ -85,7 +85,9 @@ class FriendListView: UITableViewController, SectionHeaderViewDelegate {
         for (var i = 0; i < countOfRowsToInsert; i++) {
             indexPathsToInsert.append(NSIndexPath(forRow: i, inSection: sectionOpened))
         }
+        self.tableView.beginUpdates()
         self.tableView.insertRowsAtIndexPaths(indexPathsToInsert, withRowAnimation: UITableViewRowAnimation.None)
+        self.tableView.endUpdates()
     }
     
     func sectionHeaderView(sectionHeaderView: SectionHeaderView, sectionClosed: Int) {
@@ -96,7 +98,9 @@ class FriendListView: UITableViewController, SectionHeaderViewDelegate {
             for (var i = 0; i < countOfRowsToDelete; i++) {
                 indexPathsToDelete.append(NSIndexPath(forRow: i, inSection: sectionClosed))
             }
+            self.tableView.beginUpdates()
             self.tableView.deleteRowsAtIndexPaths(indexPathsToDelete, withRowAnimation: UITableViewRowAnimation.None)
+            self.tableView.endUpdates()
         }
     }
 }

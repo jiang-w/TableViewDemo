@@ -11,29 +11,40 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-Sk-URf" userLabel="Disclosure">
-                    <rect key="frame" x="8" y="8" width="17" height="22"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-6g-dnI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-pi-P1I" userLabel="Title">
+                            <rect key="frame" x="33" y="9" width="279" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-Sk-URf" userLabel="Disclosure">
+                            <rect key="frame" x="8" y="8" width="17" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="17" id="Az8-TJ-nAB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" image="carat"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="17" id="mZV-nP-pXw"/>
+                        <constraint firstItem="3gb-Sk-URf" firstAttribute="centerY" secondItem="h7V-pi-P1I" secondAttribute="centerY" id="65n-Yq-eRb"/>
+                        <constraint firstItem="h7V-pi-P1I" firstAttribute="leading" secondItem="3gb-Sk-URf" secondAttribute="trailing" constant="8" symbolic="YES" id="V6e-tt-4Ao"/>
+                        <constraint firstItem="3gb-Sk-URf" firstAttribute="leading" secondItem="oXd-6g-dnI" secondAttribute="leadingMargin" id="e2y-w5-Lj1"/>
+                        <constraint firstItem="3gb-Sk-URf" firstAttribute="top" secondItem="oXd-6g-dnI" secondAttribute="topMargin" id="ek4-D7-XnQ"/>
+                        <constraint firstItem="h7V-pi-P1I" firstAttribute="trailing" secondItem="oXd-6g-dnI" secondAttribute="trailingMargin" id="lY0-6D-3Zw"/>
+                        <constraint firstItem="h7V-pi-P1I" firstAttribute="bottom" secondItem="3gb-Sk-URf" secondAttribute="bottom" id="tQj-37-zfP"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                    <state key="normal" image="carat"/>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-pi-P1I" userLabel="Title">
-                    <rect key="frame" x="33" y="9" width="279" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="h7V-pi-P1I" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="3gw-67-Ng7"/>
-                <constraint firstItem="h7V-pi-P1I" firstAttribute="bottom" secondItem="3gb-Sk-URf" secondAttribute="bottom" id="6DL-ln-qwi"/>
-                <constraint firstItem="3gb-Sk-URf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="9Nh-bP-z0h"/>
-                <constraint firstItem="3gb-Sk-URf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="qBP-yi-Gkw"/>
-                <constraint firstItem="3gb-Sk-URf" firstAttribute="centerY" secondItem="h7V-pi-P1I" secondAttribute="centerY" id="r81-qV-qO3"/>
-                <constraint firstItem="h7V-pi-P1I" firstAttribute="leading" secondItem="3gb-Sk-URf" secondAttribute="trailing" constant="8" symbolic="YES" id="sH0-Cq-gl4"/>
+                <constraint firstAttribute="trailing" secondItem="oXd-6g-dnI" secondAttribute="trailing" id="KcP-Wd-iyW"/>
+                <constraint firstItem="oXd-6g-dnI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mPK-yv-qjj"/>
+                <constraint firstAttribute="bottom" secondItem="oXd-6g-dnI" secondAttribute="bottom" id="s0O-ci-aic"/>
+                <constraint firstItem="oXd-6g-dnI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sba-Hc-p4S"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
