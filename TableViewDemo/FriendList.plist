@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>GroupName</key>
+		<string>大学同学</string>
+		<key>Friends</key>
+		<array>
+			<dict>
+				<key>Avatars</key>
+				<string></string>
+				<key>Name</key>
+				<string>邵震宇</string>
+				<key>intro</key>
+				<string>出差中</string>
+			</dict>
+			<dict>
+				<key>Avatars</key>
+				<string></string>
+				<key>Name</key>
+				<string>李燃</string>
+				<key>Intro</key>
+				<string>当爸爸了</string>
+			</dict>
+			<dict>
+				<key>Avatars</key>
+				<string></string>
+				<key>Name</key>
+				<string>钟鸣</string>
+				<key>Intro</key>
+				<string>这个家伙很懒，什么也没留下</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>GroupName</key>
+		<string>中学同学</string>
+		<key>Friends</key>
+		<array>
+			<dict>
+				<key>Avatars</key>
+				<string></string>
+				<key>Name</key>
+				<string>张晓光</string>
+				<key>Intro</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>GroupName</key>
+		<string>小学同学</string>
+		<key>Friends</key>
+		<array>
+			<dict>
+				<key>Avatars</key>
+				<string></string>
+				<key>Name</key>
+				<string>邓安安</string>
+				<key>Intro</key>
+				<string>这家伙很懒，什么也没留下</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
